@@ -1,0 +1,25 @@
+{
+  "name": "week6_coding_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stringerdt/Week6-Coding-Assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stringerdt/Week6-Coding-Assignment/issues"
+  },
+  "homepage": "https://github.com/Stringerdt/Week6-Coding-Assignment#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}

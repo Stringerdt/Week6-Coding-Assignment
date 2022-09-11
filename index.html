@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links index.css style sheet -->
+    <link rel="stylesheet" href="index.css">
+    <title>Week6 Coding Assignment</title>
+</head>
+<body>
+    <!-- h1 Title of page, may edit -->
+    <h1 id="h1">WELCOME TO WAR!</h1>
+
+    <!-- Input form to get both players' names -->
+    <form action="" id="inputForm" class="menuDisplay">        
+        
+        <div id="formHeaderDiv">
+            <span id="FormHeaderText">Enter Player Names!</span>
+        </div>
+
+        <input type="text" id="p1Input" placeholder="Player One">
+        <!-- <label for="p1Input">Player 2</label> -->
+        <input type="text" id="p2Input" placeholder="Player Two">
+        <!-- button to start game if inputs have values -->
+        <button id="inputFormBtn">Begin War!</button>
+    </form>
+    
+    <!-- Display for game board when initiallized -->
+    <div class="gameDisplay" id="fullGameBoard">
+
+        <!-- Header for game board -->
+        <div class="gameDisplay" id="gameHeader">
+            <!-- game header class for game; displays status/messages/and results -->
+            <span id="gameHeaderText">Get Ready For WAR!!!</span>
+            <!-- displays the counter of the current round for players to watch -->
+            <span id="roundCounter"></span>
+            <!-- button that moves game to the next round/step -->
+            <button id="nextRoundBtn">Click here to deal cards</button>
+        </div>
+
+        <!-- total player1 box -->
+        <div class="playerBox gameDisplay" id="p1Box">
+            <!-- player1 info box -->
+            <div class="playerInfo gameDisplay" id="p1Info">
+                <!-- player 1 name span-->
+                <span class="playerName" id="p1Name"></span>
+                <!-- player 1 score span -->
+                <span class="playerScore" id="p1Score">Score: 0</span>
+            </div>
+
+            <!-- player1 cards -->
+            <div class="playerCards gameDisplay" id="p1Cards">
+                <!-- player1 hand -->
+                <div class="playerHand gameDisplay" id="p1Hand">
+                    <!-- player 1 handRemaining span displaying how many cards left -->
+                    <span class="handRemainingHeader" id="p1HandHeader">Cards Remaining: </span>
+                    <span class="handRemainingCounter" id="p1HandSpan"></span> 
+                </div>
+                <!-- player1 played card-->
+                <div class="playedCard gameDisplay" id="p1PlayedCard">
+                    <!-- span to display the rank of player1's played card -->
+                    <span class="playedCardRank" id="p1CardRank"></span>
+                    <!-- images displays the suit image for player1's played card -->
+                    <img src="" class="playedCardSuit" id="p1CardSuit"></img>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- total player 2 box -->
+        <div class="playerBox gameDisplay" id="p2Box">
+            <!-- player 2 info box-->
+            <div class="playerInfo gameDisplay" id="p2Info">
+                <!-- player2 name span -->
+                <span class="playerName" id="p2Name"></span>
+                <!-- player 2 score span -->
+                <span class="playerScore" id="p2Score">Score: 0</span>
+            </div>
+
+            <!-- player 2 cards -->
+            <div class="playerCards gameDisplay" id="p2Cards">
+                <!-- player 2 played card-->
+                <div class="playedCard gameDisplay" id="p2PlayedCard">
+                    <!-- span to display the rank of player1's played card -->
+                    <span class="playedCardRank" id="p2CardRank"></span>
+                    <!-- images displays the suit image for player1's played card -->
+                    <img src="" class="playedCardSuit" id="p2CardSuit"></img>
+
+                </div>
+                <!-- player 2 hand -->
+                <div class="playerHand gameDisplay" id="p2Hand">
+                    <!-- player 2 handRemaining span displaying how many cards left -->
+                    <span class="handRemainingHeader" id="p2HandHeader">Cards Remaining: </span>
+                    <span class="handRemainingCounter" id="p2HandSpan"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Button that allows me to check the warGame object & any other values I want to add to check on -->
+    <!-- <button id="checkValuesBtn" class="footerBtn">Check Values</button> -->
+
+    <!-- module-type script that runs index.js -->
+    <script src="app.js" type="module"></script>
+</body>
+</html>
